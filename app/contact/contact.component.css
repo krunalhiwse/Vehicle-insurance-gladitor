@@ -1,0 +1,28 @@
+.cont{
+    width: 100%;
+    height: auto;
+    text-align: center;
+     /* background-color: rgb(189, 182, 182); */
+     background-color: rgb(205, 229, 243);
+     padding: 60px 15px;
+     font-family: 'Times New Roman', Times, serif;
+     padding-right: 30%;
+     padding-left: 30%;
+    
+}
+.form{
+    font-size: 15px;
+    opacity: 8;
+    line-height: 27px;
+    max-height :520px;;
+}
+.input{
+    
+    padding: 2% 2%;
+    border-radius: 10px;
+}
+.name_input{
+    border-style:inset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

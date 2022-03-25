@@ -1,0 +1,17 @@
+<div class="cont">
+    <table class="table table-striped">
+        <tr class="col"><td>Vehicle ID</td><td>Vehicle Model</td><td>Vehicle Type</td><td>manufacturer</td><td>purchase date</td><td>Registration Number</td><td>engine Num</td><td>chassisnum</td><td>Drivinglicensens</td></tr>
+        <tr *ngFor="let vh of vehicleList">
+            <td>{{vh.vid}}</td>
+            <td>{{vh.vmodel}}</td>
+            <td>{{vh.type}}</td>
+            <td>{{vh.manufac}}</td>
+            <td>{{vh.purchasedate}}</td>
+            <td>{{vh.registrationnum}}</td>
+            <td>{{vh.enginenum}}</td>
+            <td>{{vh.chassisnum}}</td>
+            <td>{{vh.drivinglicensenum}}</td>
+            
+        </tr>
+        </table>
+    </div>

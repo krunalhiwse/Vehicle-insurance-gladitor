@@ -1,0 +1,85 @@
+.cont{
+    margin-top: 10px;
+  text-align: center;
+  margin-left: 30%;
+  padding-top: 4%;
+  width: 40%;
+  padding-bottom: 4%;
+   margin-left: 30%;
+    margin-right: 05%;
+    background-color: rgb(205, 229, 243);
+    /* background-color: hsla(0, 100%, 70%, 0.3); */
+    color: black;
+    
+}
+.input{
+    
+    padding: 2% 2%;
+    border-radius: 10px;
+}
+.radio{
+    width: 40px;
+    size:20%;
+    border-style: dotted;
+}
+
+
+
+
+
+/* #man{
+    border: 2px solid black;
+    font-size: 50px;
+text-align: center;
+background-color: rgb(115, 115, 216) ;
+margin: 10px;
+}
+#one{
+    border: 2px solid black;
+    width: 150px;
+    margin:20px;
+    padding: 5px;
+    background-color: white;
+    
+}
+
+.in{
+    border: 2px solid black;
+    background-color: rgb(115, 115, 216) ;
+    text-align: center;
+    padding: 15px ;
+    width: 250px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#divdiv{
+    border: 2px solid black;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: grey;
+
+}
+.in1{
+    border: 2px solid black;
+    background-color: rgb(115, 115, 216) ;
+    text-align: center;
+    padding: 15px ;
+    width: 250px;
+    margin: 10px;
+    font-size: 20px;
+}
+.in12{
+    border: 2px solid black;
+    background-color: rgb(115, 115, 216) ;
+    text-align: center;
+    padding: 05px ;
+    width: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 230px;
+    font-size: 30px;
+    
+    
+
+} */

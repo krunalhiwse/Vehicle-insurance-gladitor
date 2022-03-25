@@ -1,0 +1,56 @@
+<div class="cont">
+    <h3>Select Your Plan</h3>
+    <br>
+    <form #updateForm="ngForm"(ngSubmit)="savePlan(updateForm)" >
+    <div class="">
+        <h5>Enter Your Email</h5>
+        <input required  class="input" type="email" name="email" placeholder="xyz11@gmail.com" ngModel required>
+        <br><br>
+        
+        <h5>Vehicle Type</h5>
+        <input  type="radio"  name="vehicleType" value="twowheeler"  [(ngModel)]="vehicletype">Two Wheeler
+        <br>
+        <input  type="radio"  name="vehicleType" value="fourwheeler"  [(ngModel)]="vehicletype">Four Wheeler
+        <br><br>  
+        
+        <div id="two" name="plan" *ngIf="vehicletype==='twowheeler'" ngModel>
+        <h5>Select Plan for Tow Wheeler</h5>
+        <select  name="plan"  id="twowheel"  ngModel>
+            <option value=""></option>
+            <option value="Third-Party Liability Only Cover.">Third-Party Liability Only Cover.</option>
+            <option value="Collision Damage or Own Damage (OD) Cover">Collision Damage or Own Damage (OD) Cover</option>
+            <option value="Personal Accident Cover">Personal Accident Cover</option>
+            <option value="Zero Depreciation Insurance:">Zero Depreciation Insurance:</option>
+            <option value="Comprehensive Car Insurance">Comprehensive Car Insurance</option>
+
+        </select>
+        <br><br>
+    </div>
+       
+        <div id="four" *ngIf="vehicletype==='fourwheeler'">
+        <h5>Select Plan for Four Wheeler</h5>
+        <select name="plan"  ngModel>
+            <option value=""></option>
+            <option value="Third-Party Liability Only Cover">Third-Party Liability Only Cover.</option>
+            <option value="Collision Damage or Own Damage (OD) Cover.">Collision Damage or Own Damage (OD) Cover.</option>
+            <option value="Personal Accident Cover">Personal Accident Cover</option>
+            <option value="Zero Depreciation Insurance:">Zero Depreciation Insurance:</option>
+            <option value="Comprehensive Car Insurance">Comprehensive Car Insurance</option>
+        </select>
+        <br><br>
+    </div>
+
+        <h5>Select Year </h5>
+        
+        <select name="year" id="" ngModel>
+            <option value=""></option>
+             <option value="one Year">One Year</option>
+            <option value="Two Year">Two Year</option>
+            <option value="Three Year">Three Year</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Update  The Plan" class="btn btn-success">
+
+    </div>
+    </form>
+</div>

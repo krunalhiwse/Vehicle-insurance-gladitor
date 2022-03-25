@@ -1,0 +1,51 @@
+
+    <div class="cont">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nobis error officia voluptatibus accusamus neque corrupti optio debitis eligendi </p>
+
+            <div class="container">
+                <div class="details">
+                    <div class="details">
+                      <h3>CALL US ON</h3>
+                        <h4>+91 7489023863</h4>
+                    </div>
+                    <br>
+                    <div class="details"> 
+                        <h3>EMAIL US ON</h3>
+                        <h4>anshuldashore18@gmail.com</h4>
+                    </div>
+                    <br>
+                    <div class="details">
+                        <i class="uil uil-location-arrow-alt"></i>
+                        <h3>VISIT OFFICE</h3>
+                        <h4>Mumbai, Pune</h4>
+                    </div>
+                    <br>
+                </div>
+            <form #contactForm="ngForm"(ngSubmit)="addSuggestions(contactForm)">
+                
+                    <div class="name_input">
+                        <h3> Write At Us</h3>
+                        <input required #fname ="ngModel" class="input" type="text" placeholder="First Name" name="fname" ngModel required> <br>
+                        <span *ngIf="fname.invalid && fname.touched">Name is Required</span>
+                        <br>
+                        <input class="input" type="text" placeholder="Last name" name="lname" ngModel>
+                        <br>
+                        <br>
+                        <input required #email="ngModel" type="email" class="input" placeholder="Your Email" name="email"ngModel required> <br>
+                        <span *ngIf="email.invalid && email.touched">Email is Required</span>
+                        <br>
+                        <br>
+                       <textarea required #text="ngModel" name="" id="" cols="20" rows="5" name="text" ngModel></textarea><br>
+                       <span *ngIf="text.invalid && text.touched">Right your Complaint</span>
+                        <br>
+                        <button [disabled]="contactForm.invalid" routerLink="/home" type="submit" value="SAVE" class="btn btn-success">Submit</button>
+                       
+                    </div>
+                        
+                </form>
+            
+            </div>
+        </div>
+
+ 

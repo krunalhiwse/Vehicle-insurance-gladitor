@@ -1,0 +1,43 @@
+.coloum{
+    color: black;
+    width: 90%;
+    height: 07%;
+    border-radius: 10px;
+    margin-left: 05%;
+    margin-right: 05%;
+    padding: 10px 10px;
+    background-color: rgb(205, 229, 243);
+    border-style:groove;
+}
+.text{
+    text-align: center;
+}
+.collapse{
+    width: 90%;
+    margin-left: 05%;
+    margin-right: 05%;
+    background-color: rgb(160, 216, 248);
+    width: 90%;
+    height: 07%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+}
+.nav-link{
+    color: black;
+}
+h2{
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(205, 229, 243);
+    border: 2px solid black;
+}
+img{
+    height: 30px;
+    width: 70px ;
+   float: left;
+   margin: 5px 1px 1px 50px;
+   border: 2px solid black;
+   border-radius: 5px;
+ }

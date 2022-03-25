@@ -1,0 +1,16 @@
+
+<form #loginForm="ngForm"(ngSubmit)="addUser(loginForm)">
+<div class="cont">
+    <input required #email="ngModel"  email class="input" type="email" name="email" placeholder="Enter your Registered Email" ngModel ><br>
+    <span *ngIf="email.invalid && email.touched" class="error">incorrect Email</span>
+    <br>
+    <input required #password="ngModel" class="input" type="password" name="password" placeholder=" password" ngModel required><br>
+    <span *ngIf="password.invalid && password.touched" class="error">incorrect Password</span>
+    <br><br>
+    <!-- <input class="input" type="email" placeholder="Email">
+    <br><br> -->
+    <!-- <a routerLink="/login"  class="btn btn-success" type="button">Login</a><br> -->
+    <button [disabled]="loginForm.invalid" type="submit" class="btn btn-success">Login</button><br>
+    <a routerLink="/registration" style="color: black;">create a new Account</a>
+</div>
+</form>

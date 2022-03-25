@@ -1,0 +1,15 @@
+<div class="cont">
+    <table class="table table-striped">
+        <tr class="col"><td>email</td><td>Name</td><td>address</td><td>Date of Birth</td><td>Contact Number</td><td>password</td><td>Confirm Password</td></tr>
+        <tr *ngFor="let vh of vehicleList">
+            <td>{{vh.email}}</td>
+            <td>{{vh.name}}</td>
+            <td>{{vh.address}}</td>
+            <td>{{vh.dob}}</td>
+            <td>{{vh.conNumber}}</td>
+            <td>{{vh.password}}</td>
+            <td>{{vh.conPassword}}</td>
+            
+        </tr>
+        </table>
+    </div>

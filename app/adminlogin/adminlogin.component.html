@@ -1,0 +1,14 @@
+<table >
+    <tr>
+        <td>Login Name</td> <td><input type="text" [(ngModel)]=" LoginName"></td>
+    </tr>
+    <br>
+    <tr>
+        <td>Password</td><td><input type="password" [(ngModel)]=" Password"></td>
+    </tr>
+    <br>
+    <tr>
+        <td> <input type="button" value="Login"  class="btn btn-primary" (click)="login()"> </td>
+     </tr>
+</table>
+<span style="color: red;"></span>{{logError}}

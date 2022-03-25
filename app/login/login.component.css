@@ -1,0 +1,21 @@
+.cont{
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 30%;
+    padding-top: 4%;
+    width: 40%;
+    padding-bottom: 4%;
+     margin-left: 30%;
+      margin-right: 05%;
+      background-color: rgb(205, 229, 243);
+      color: black;
+      
+  }
+  .input{
+      
+      padding: 2% 2%;
+      border-radius: 10px;
+  }
+  .error{
+      color: red;
+  }

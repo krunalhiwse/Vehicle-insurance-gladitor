@@ -1,0 +1,39 @@
+
+<form #registrationForm="ngForm"(ngSubmit)="saveRegistration(registrationForm)">
+    
+<div class="cont">
+    <h5>Enter Your Full Name</h5>
+     <input required #name="ngModel" class="input" type="text" name="name" placeholder="Name" ngModel> <br>
+     <span *ngIf="name.invalid && name.touched" class="error">Name is required</span>
+    <br>
+    <h5>Enter Your Email</h5>
+    <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" #email="ngModel"  class="input" type="email" name="email" placeholder="Xyz23@gmail.com" ngModel> <br>
+      <span *ngIf="email.invalid && email.touched" class="error">Incorrct Email</span>
+   
+    <br>
+    <h5>Enter Your Date of Birth</h5>
+    <input class="input" type="date" name="dob" placeholder="Date of Birth" ngModel><br>
+    <br>
+    <h5>Enter Your Contact Number</h5>
+    <input required #conNumber="ngModel" pattern="[789][0-9]{9}" maxlength="10" minlength="10" class="input" type="text" name="conNumber" placeholder="7509708904" ngModel> <br>
+    <span *ngIf="conNumber.invalid && conNumber.touched" class="error">Contact Number is Required</span>
+    <br>
+    <h5>Enter Your Address</h5>
+    <input required pattern=[a-zA-Z]* #address="ngModel" class="input" type="text" name="address" placeholder="Address" ngModel> <br>
+    <span *ngIf="address.invalid && address.touched" class="error">Address is Required</span>
+    <br>
+    <h5>Create Password</h5>
+    <input required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="input" type="password" name="password" placeholder="Password" #Actulpassword="ngModel" ngModel> <br> 
+    <span *ngIf="Actulpassword.invalid && Actulpassword.touched" class="erroe" >Password is not Valid</span>
+    <br>
+    <h5>Confirm Password</h5>
+    <input required  class="input" type="password" name="conPassword" placeholder="Confirm Password" #conPassword="ngModel"  ngModel> <br>
+    <div *ngIf="conPassword.value!==Actulpassword.value">Password are not matched</div>
+   
+   
+    <br><br>
+   <!-- <input routerLink="/newvehicle" type="submit" class="btn btn-success" [disabled]="registrationForm.valid" value="submit"><br> -->
+   <button [disabled]="registrationForm.invalid" type="submit" class="btn btn-success">Submit</button>
+     
+</div>
+</form>

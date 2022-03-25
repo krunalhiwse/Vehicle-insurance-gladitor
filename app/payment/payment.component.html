@@ -1,0 +1,38 @@
+
+<html>
+<h1>Make Vehicle Payment</h1>
+<body>
+   
+    <form class="cont">
+<form name="form" (ngSubmit) = "f.form.valid && pay()" #f="ngForm" novalidate >
+
+        <h4 class="h4">Select Card</h4>
+        <select class="form-control" #mode="ngModel" name="mode" id="mode"  placeholder="select card"[(ngModel)]= payment.modeOfPayment required>
+             <option value="Debit Card" >Debit Card</option>
+            <option value="Credit Card" >Credit Card</option>
+        </select>
+            <input class="form-control" #acc="ngModel" type="text" name="acc" placeholder="Enter Card Number" [(ngModel)] = payment.accountNo required maxlength="16">
+            <div *ngIf="(f.submitted && acc.invalid) || (acc.dirty || acc.touched)" class="alert alert-danger">
+                <div *ngIf="acc.errors"> Card Number is invalid. </div>
+            <div *ngIf="acc.errors"> Card Number is required. </div></div>
+            <br><br>
+            <input class="form-control" #contact="ngModel" type="tel" name="contact" placeholder="Enter Contact no." [(ngModel)] = payment.contactNo required minlength="10" maxlength="10">
+            <div *ngIf="(f.submitted && contact.invalid) || (contact.dirty || contact.touched)" class="alert alert-danger">
+                <div *ngIf="contact.errors"> Contact Number is invalid. </div>
+                <div *ngIf="contact.errors"> Contact Number is required. </div></div>
+             <br><br>
+            <input class="form-control" #cvv="ngModel" type="password" name="cvv" placeholder="Enter CVV" [(ngModel)] = payment.cvv required minlength="3" maxlength="3"/>
+            <div *ngIf="(f.submitted && cvv.invalid) || (cvv.dirty || cvv.touched)" class="alert alert-danger">
+                <div *ngIf="cvv.errors"> CVV is invalid. </div>
+                <div *ngIf="cvv.errors"> CVV is required. </div></div>
+
+            <!--<div *ngIf=".errors.required" class="alert alert-danger"> Invalid CVV. </div>-->
+    <br><br>
+        <input [disabled]="f.invalid" type="submit" class="btn btn-success" name="submit" value="Submit" routerLink="/congratulation" routerLinkActive="active">
+        </form>
+        <br>
+      <form>  <input type="submit" class="btn btn-primery" name="submit" value="Cancel" routerLink = "/home" routerLinkActive="active" /></form>
+    </form>
+   
+   </body>
+</html>
